@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "brojang",
+	"version": "1.0",
+	"name": "Brojang Stuidos Logo",
+	"description": "Replace the Mojang logo wth Brojang!",
+	"authors": [
+		"tanczos"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.relahniknuj.brojanglogo.Brojang"
+		],
+		"client": ["com.relahniknuj.brojanglogo.BrojangClient"]
+	},
+	"mixins": [
+		"brojang.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
